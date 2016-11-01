@@ -7,6 +7,9 @@
   <body>
     <header class="main-header">
       <div class="container">
+        <div class="index-logo">
+          <a href="#"><img src="index-logo.png"</a>
+        </div>
         <nav class="main-navigation">
           <ul>
             <li><a href="#">Студия</a></li>
@@ -19,67 +22,149 @@
           <a class="shopcart" href="#">Корзина</a>
         </div>
       </div>
-      <div class="logo-1">
-        <img src="#">
-      </div>
       <h1 class="store-templates">магазин готовых шаблонов</h1>
     </header>
     <main class="container">
-      <form action="#" method="post">
-        <div class="cost">
-          <p class="options">стоимость</p>
-            <input id="range" type="range" min="0" max="15000" step="1" value="10000">
-            <label for="range" class="q-1">
-              <input type="text" value="0">от</label>
-            <label for="range" class="q-1">
-              <input type="text" value="15 000">до</label>
-        </div>
+      <form action="#" method="get">
+				<div class="cost">
+					<h2>Стоимость:</h2>
+					<div class="range-controls">
+						<div class="scale"><div class="bar"></div></div>
+						<div class="toggle min-toggle"></div>
+						<div class="toggle max-toggle"></div>
+					</div>
+					<div class="price-controls">
+						<label>от<input class="min-price" value="0" type="text"></label>
+						<div class="max-price-absolute"><label>до<input class="max-price" value="15 000" type="text"></label></div>
+					</div>
+				</div>
         <div class="grid">
-          <p class="options">сетка</p>
+				  <h2>Сетка:</h2>
             <label>
-              <input type="radio" name="grid" value="Адаптивная" checked>Адаптивная
+              <input type="radio" name="grid" value="responsive" checked>Адаптивная
+              <span class="radio-indicator"></span>
             </label>
             <label>
-              <input type="radio" name="grid" value="Фиксированная">Фиксированная
+              <input type="radio" name="grid" value="fixed">Фиксированная
+              <span class="radio-indicator"></span>
             </label>
             <label>
-              <input type="radio" name="grid" value="Резиновая">Резиновая
+              <input type="radio" name="grid" value="fluid">Резиновая
+              <span class="radio-indicator"></span>
             </label>
         </div>
-        <div class="features">
-          <p class="options">особенности</p>
-            <label for="slider">Слайдер</label>
-              <input id="slider" type="checkbox" checked name="slider">
-            <label for="benefits-unit">Блок преимуществ</label>
-              <input id="benefits-unit" type="checkbox" name="benefits-unit">
-            <label for="news">Новости</label>
-              <input id="news" type="checkbox" checked name="news">
-            <label for="gallery">Галерея</label>
-              <input id="gallery" type="checkbox" name="gallery">
-            <label for="shopcart">Корзина</label>
-              <input id="shopcart" type="checkbox" name="shopcart">
-            <input type="submit" value="Показать" class="shows" name="show">
+        <div class="options">
+          <h2>Особенности:</h2>
+            <label>
+              <input id="slider" type="checkbox" checked name="slider">Слайдер
+              <span class="checkbox-indicator"></span>
+            </label>
+            <label>
+              <input id="benefits-unit" type="checkbox" name="benefits-unit">Блок преимуществ
+              <span class="checkbox-indicator"></span>
+            </label>
+            <label>
+              <input id="news" type="checkbox" checked name="news">Новости
+              <span class="checkbox-indicator"></span>
+            </label>
+            <label>
+              <input id="gallery" type="checkbox" name="gallery">Галерея
+              <span class="checkbox-indicator"></span>
+            </label>
+            <label>
+              <input id="shopcart" type="checkbox" name="shopcart">Корзина
+              <span class="checkbox-indicator"></span>
+            </label>
         </div>
+        <input type="submit" value="Показать" class="shows" name="show">
       </form>
       <div class="sorting">
-        <p class="sorting">сортировка</p>
-          <a href="#" class="sorting-1">по цене</a>
-          <a href="#" class="sorting-2">по типу</a>
-          <a href="#" class="sorting-3">по названию</a>
-          <a href="#" class="sorting-4"><img src="#"></a>
-          <a href="#" class="sorting-5"><img src="#"></a>
+        <ul class="items-sorting">
+          <li>Сортировать:</li>
+            <li><span class="filter-active">по цене</span></li>
+            <li><a href="#">по типу</a></li>
+            <li><a href="#">по функционалу</a></li>
+            <li><a class="sort-dn sort-arrow-active" href="#">по убыванию</a></li>
+            <li><a class="sort-up" href="#">по возрастанию</a></li>
+        </ul>
       </div>
-      <div>
-        <a href="#"><img src="#1"></a>
-        <a href="#"><img src="#2"></a>
-        <a href="#"><img src="#3"></a>
-        <a href="#"><img src="#4"></a>
-        <a href="#"><img src="#5"></a>
-        <a href="#"><img src="#6"></a>
+      <div class="catalog">
+        <div class="item-one">
+          <div class="catalog-img">
+            <img src="#" alt="Макет Sedona">
+          </div>
+          <div class="catalog-item-action">
+            <h3>Sedona</h3>
+            <p class="item-description">Информационный сайт для туристов</p>
+            <div class="btn-item-price">
+              <a href="#">9 900 руб.</a>
+            </div>
+          </div>
+        </div>
+        <div class="item-two">
+          <div class="catalog-img">
+            <img src="#" alt="Макет Pink">
+          </div>
+          <div class="catalog-item-action">
+            <h3>Pink</h3>
+            <p class="item-description"></p>
+            <div class="btn-item-price">
+              <a href="#">#</a>
+            </div>
+          </div>
+        </div>
+        <div class="item-three">
+          <div class="catalog-img">
+            <img src="#" alt="Макет Borodinski">
+          </div>
+          <div class="catalog-item-action">
+            <h3>Borodinski</h3>
+            <p class="item-description"></p>
+            <div class="btn-item-price">
+              <a href="#">#</a>
+            </div>
+          </div>
+        </div>
+        <div class="item-four">
+          <div class="catalog-img">
+            <img src="#" alt="Макет #">
+          </div>
+          <div class="catalog-item-action">
+            <h3>#</h3>
+            <p class="item-description"></p>
+            <div class="btn-item-price">
+              <a href="#">#</a>
+            </div>
+          </div>
+        </div>
+        <div class="item-five">
+          <div class="catalog-img">
+            <img src="#" alt="Макет #">
+          </div>
+          <div class="catalog-item-action">
+            <h3>#</h3>
+            <p class="item-description"></p>
+            <div class="btn-item-price">
+              <a href="#">#</a>
+            </div>
+          </div>
+        </div>
+        <div class="item-six">
+          <div class="catalog-img">
+            <img src="#" alt="Макет #">
+          </div>
+          <div class="catalog-item-action">
+            <h3>#</h3>
+            <p class="item-description"></p>
+            <div class="btn-item-price">
+              <a href="#">#</a>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="site-pages">
         <ul class="breadcrumbs">
-          <li><a href="#1">1</a></li>
+          <li class="active">1</a></li>
           <li><a href="#2">2</a></li>
           <li><a href="#3">3</a></li>
           <li><a href="#" class="next">следующая</a></li>
@@ -102,9 +187,9 @@
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
           <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
         </div>
-        <div class="friends">
-          <p class="friends1">Давайте дружить, это выгодно!</p>
-          <br>Скидка 10% для друзей из социальных сетей.
+        <div>
+          <p class="friends">Давайте дружить, это выгодно!</p>
+          <p class="about-text">Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </section>
     </footer>
