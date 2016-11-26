@@ -503,12 +503,12 @@ h3 {
   padding-left: 50px;
   position: relative;
   margin-top: 52px;
-  margin-left: -115px;
 }
 .contacts h3 {
   margin-top: 2px;
   padding-top: 50px;
   padding-bottom: 0;
+  margin-left: 5px;
 }
 .contacts p {
   line-height: 18px;
@@ -544,7 +544,6 @@ h3 {
   overflow: hidden;
   background: url("../img/map.jpg") center no-repeat;
   height: 416px;
-  padding-left: 233px;
 }
 .footer-map .container {
   position: relative;
