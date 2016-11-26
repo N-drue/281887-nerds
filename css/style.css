@@ -501,18 +501,19 @@ h3 {
   height: 308px;
   background-color: #fff;
   padding-left: 50px;
-  left: -115px;
   position: relative;
-  top: -235px;
+  margin-top: 52px;
+  margin-left: -115px;
 }
 .contacts h3 {
   margin-top: 2px;
-  padding-top: 47px;
+  padding-top: 50px;
   padding-bottom: 0;
 }
 .contacts p {
   line-height: 18px;
-  padding-top: 7px;
+  padding-top: 5px;
+  margin-left: 5px;
 }
 .contacts .btn-contacts {
   display: block;
@@ -548,12 +549,6 @@ h3 {
 .footer-map .container {
   position: relative;
   top: 0;
-}
-.marker {
-  position: relative;
-  left: 565px;
-  margin-top: 90px;
-  z-index: 1000;
 }
 .footer-bottom {
   padding-bottom: 70px;
