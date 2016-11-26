@@ -501,9 +501,9 @@ h3 {
   height: 308px;
   background-color: #fff;
   padding-left: 50px;
-  left: 140px;
-  position: absolute;
-  top: 55px;
+  left: -115px;
+  position: relative;
+  top: -235px;
 }
 .contacts h3 {
   margin-top: 2px;
@@ -512,7 +512,7 @@ h3 {
 }
 .contacts p {
   line-height: 18px;
-  padding-top: 4px;
+  padding-top: 7px;
 }
 .contacts .btn-contacts {
   display: block;
@@ -520,8 +520,8 @@ h3 {
   width: 218px;
   text-align: center;
   color: #fff;
-  margin-top: 37px;
-  padding-top: 10px;
+  margin-top: 33px;
+  padding-top: 11px;
   padding-bottom: 11px;
   border-radius: 3px;
   text-decoration: none;
@@ -543,15 +543,15 @@ h3 {
   overflow: hidden;
   background: url("../img/map.jpg") center no-repeat;
   height: 416px;
-  margin-left: 233px;
+  padding-left: 233px;
 }
 .footer-map .container {
-  position: absolute;
+  position: relative;
   top: 0;
 }
 .marker {
-  position: absolute;
-  left: 800px;
+  position: relative;
+  left: 565px;
   margin-top: 90px;
   z-index: 1000;
 }
@@ -1152,7 +1152,7 @@ button.product-card-price:active {
   display: none;
   z-index: 2000;
   position: fixed;
-  top: 50%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 760px;
